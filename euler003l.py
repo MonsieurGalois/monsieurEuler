@@ -21,8 +21,7 @@ def factor(t):
             return a
 
 k = time.time()
-#print factor(65765323)
-print factor(600851475143 )
+factor(65765323)
 #for i in range(2000,2050):
 #    print i, factor(i)
 #print factor(2014)

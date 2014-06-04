@@ -14,8 +14,7 @@ def primes(n):
 				t+=1 
 		i+=1
 	return P
-
-	
+primes(100000)
 
 '''
 r=1000000000

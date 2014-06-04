@@ -2,9 +2,9 @@ from numpy import zeros
 from time import time
 t=time()
 R=[]
-with open(r'C:\Users\Monsieur Galois\Github\PythonPrograms\matrix.txt','rt') as neo:
-    for line in neo:
-        R.append(map(int,line[0:-1].split(',')))
+neo=open('matrix.txt')
+for line in neo:
+    R.append(map(int,line[0:-1].split(',')))
 
 M=zeros((80,80))
 
