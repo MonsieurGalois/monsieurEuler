@@ -1,21 +1,23 @@
 from euler010l import primes
 from euler003l import factor
 
-A=set(primes(1000000))
+A=primes(1000000)
 
-def orderfactor(n):
-	F=factor(n)
-	Q=dict()
-	for i in set(F):
-		Q[i]=F.count(i)
-	return Q	
-
-PHIS=[True]*100
-PHIS[0]=0
-PHIS[1]=1
+t=1
 for i in A:
-	p=i
-	while p<1000001:
-		PHIS[p]=		
+	tt=t*i
+	if tt<1000000:
+		t=tt
+	else:
+		break
+	
+F=factor(t)
 
-print PHIS
+phi=1
+
+for j in set(F):
+	phi*=(1-1/float(j))
+
+print t
+print 1/phi
+print F
